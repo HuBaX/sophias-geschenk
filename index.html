@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christmas Greetings Card</title>
+    <title>Frohe Weihnachten Sophia!</title>
     <style>
         body {
             margin: 0;
@@ -12,31 +12,77 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: #e44d26; /* Christmas red color */
+            background: url('eiffelturm.jpg') center/cover no-repeat; /* Replace 'eiffelturm.jpg' with your actual image file */
             font-family: 'Arial', sans-serif;
         }
 
         .greetings-card {
             background-color: #fff; /* White background for the card */
-            padding: 30px;
-            border-radius: 10px;
+            padding: 1vw; /* Adjust padding using vw unit */
+            border-radius: 5px;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            max-width: 35vw; /* Adjust the maximum width using vw unit */
+            margin: 0 auto; /* Center the card horizontally */
+            position: relative; /* Set position to relative for absolute positioning of images */
+            border: 0.5vw solid; /* Adjust border using vw unit */
+            border-image: linear-gradient(to right, #0055a4, #fff, #ef3340); /* French flag colors */
+            border-image-slice: 1; /* Ensure the border covers the entire element */
         }
 
         h1 {
             color: #e44d26; /* Christmas red color */
+            font-size: 2vw; /* Adjust font size using vw unit */
         }
 
         p {
             color: #333;
+            font-size: 1.2vw; /* Adjust font size using vw unit */
+            line-height: 1.2; /* Add some line spacing for better readability */
+        }
+
+        .image-left,
+        .image-right,
+        .image-bottom {
+            position: absolute;
+            max-height: 15vw; /* Adjust the maximum height using vw unit */
+            border: 0.3vw solid; /* Adjust border using vw unit */
+            border-image: linear-gradient(to right, #0055a4, #fff, #ef3340); /* French flag colors */
+            border-image-slice: 1; /* Ensure the border covers the entire element */
+            border-radius: 0.5vw; /* Add border radius for rounded corners using vw unit */
+        }
+
+        .image-left {
+            left: 2vw; /* Adjust the left position using vw unit */
+            top: 15vh; /* Adjust the top position using vw unit */
+        }
+
+        .image-right {
+            right: 2vw; /* Adjust the right position using vw unit */
+            top: 30vh; /* Adjust the top position using vw unit */
+        }
+
+        .image-bottom {
+            left: 2vw; /* Adjust the left position using vw unit */
+            top: 55vh; /* Adjust the top position using vw unit */
         }
     </style>
 </head>
 <body>
+    <img class="image-left" src="citroen.jpg" alt="Citroen Image"> <!-- Replace 'citroen.jpg' with your actual image file -->
+    <img class="image-right" src="monalisa.jpg" alt="Mona Lisa Image"> <!-- Replace 'monalisa.jpg' with your actual image file -->
+    <img class="image-bottom" src="kaese.jpg" alt="Kaese Image"> <!-- Replace 'kaese.jpg' with your actual image file -->
+    
     <div class="greetings-card">
-        <h1>Merry Christmas!</h1>
-        <p>Wishing you a season of joy, peace, and happiness.</p>
+        <h1>Frohe Weihnachten!</h1>
+        <p>Hallo mein Schatz!<br>
+            Ich wünsche Dir von ganzem Herzen frohe Weihnachten! Zu Weihnachten schenke ich Dir einen Kurzurlaub in Paris!<br>
+            Ich habe mir gedacht, dass wir zuerst eine private Stadtrundfahrt in einem Old-Timer machen könnten. Außerdem könnten wir<br>
+            uns eine Führung durch den Louvre geben lassen und bei einer Käseverkostung teilnehmen. Du kannst mir einfach Bescheid sagen, wann es Dir zeitlich passen würde.<br>
+            Dann kann ich alles organisieren.<br><br>
+            Ich hab dich ganz arg lieb!<br><br>
+            - Dein Flo
+        </p>
     </div>
 </body>
 </html>
